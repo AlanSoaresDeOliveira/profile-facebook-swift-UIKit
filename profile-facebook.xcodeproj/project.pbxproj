@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07350EC32592377D00E0D3BD /* FriendsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07350EC22592377D00E0D3BD /* FriendsCollectionViewCell.swift */; };
 		07DA330F258D210300CCC42C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DA330E258D210300CCC42C /* AppDelegate.swift */; };
 		07DA3311258D210300CCC42C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DA3310258D210300CCC42C /* SceneDelegate.swift */; };
 		07DA3313258D210300CCC42C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DA3312258D210300CCC42C /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07350EC22592377D00E0D3BD /* FriendsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionViewCell.swift; sourceTree = "<group>"; };
 		07DA330B258D210300CCC42C /* profile-facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "profile-facebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DA330E258D210300CCC42C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07DA3310258D210300CCC42C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				07DA330E258D210300CCC42C /* AppDelegate.swift */,
 				07DA3310258D210300CCC42C /* SceneDelegate.swift */,
 				07DA3312258D210300CCC42C /* ViewController.swift */,
+				07350EC22592377D00E0D3BD /* FriendsCollectionViewCell.swift */,
 				07DA3314258D210300CCC42C /* Main.storyboard */,
 				07DA3317258D210400CCC42C /* Assets.xcassets */,
 				07DA3319258D210400CCC42C /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07350EC32592377D00E0D3BD /* FriendsCollectionViewCell.swift in Sources */,
 				07DA3313258D210300CCC42C /* ViewController.swift in Sources */,
 				07DA330F258D210300CCC42C /* AppDelegate.swift in Sources */,
 				07DA3311258D210300CCC42C /* SceneDelegate.swift in Sources */,
