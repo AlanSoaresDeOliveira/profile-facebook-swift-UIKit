@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    // MARK: Properties
+    internal let listOfFriends: [Friens] = FriendsDAO().getFriends()
     
     // MARK: IBOutlet
     
@@ -21,6 +23,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     @IBOutlet weak var buttonEditPublicDetails: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var friendsCollection: UICollectionView!
+    @IBOutlet weak var buttonSeeAllFriends: UIButton!
     
     // MARK: Lifecycle
     
@@ -51,27 +54,29 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         self.buttonTakePhotoPerfil.layer.cornerRadius = buttonTakePhotoPerfil.frame.width / 2
         
         self.buttonEditPublicDetails.layer.cornerRadius = 5
-//        self.scrollView.contentSize = CGSize(width: self.scrollView.frame.width, height: self.scrollView.frame.height + 400)
+        
+        self.buttonSeeAllFriends.layer.cornerRadius = 5
         
     }
 
     // MARK: UIColletcionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return listOfFriends.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "friendcell", for: indexPath) as! FriendsCollectionViewCell
+                
+        let friend = listOfFriends[indexPath.item]
         
-        cell.backgroundColor = .blue
-        cell.layer.cornerRadius = 5
+        cell.configureCell(friend: friend)
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return UIDevice.current.userInterfaceIdiom == .phone ? CGSize(width: collectionView.bounds.width / 3 - 8, height: 160) : CGSize(width: collectionView.bounds.width / 3 - 20, height: 250)
+        return UIDevice.current.userInterfaceIdiom == .phone ? CGSize(width: collectionView.bounds.width / 3 - 8, height: 170) : CGSize(width: collectionView.bounds.width / 3 - 20, height: 250)
     }
 
 }

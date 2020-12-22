@@ -14,6 +14,8 @@
 		07DA3316258D210300CCC42C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DA3314258D210300CCC42C /* Main.storyboard */; };
 		07DA3318258D210400CCC42C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DA3317258D210400CCC42C /* Assets.xcassets */; };
 		07DA331B258D210400CCC42C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DA3319258D210400CCC42C /* LaunchScreen.storyboard */; };
+		07E950A225926BD6004004C6 /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E950A125926BD6004004C6 /* Friends.swift */; };
+		07E950A525926C91004004C6 /* FriendsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E950A425926C91004004C6 /* FriendsDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		07DA3317258D210400CCC42C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07DA331A258D210400CCC42C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07DA331C258D210400CCC42C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E950A125926BD6004004C6 /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
+		07E950A425926C91004004C6 /* FriendsDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		07DA330D258D210300CCC42C /* profile-facebook */ = {
 			isa = PBXGroup;
 			children = (
+				07E950A025926BC5004004C6 /* Model */,
 				07DA330E258D210300CCC42C /* AppDelegate.swift */,
 				07DA3310258D210300CCC42C /* SceneDelegate.swift */,
 				07DA3312258D210300CCC42C /* ViewController.swift */,
@@ -68,6 +73,15 @@
 				07DA331C258D210400CCC42C /* Info.plist */,
 			);
 			path = "profile-facebook";
+			sourceTree = "<group>";
+		};
+		07E950A025926BC5004004C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07E950A125926BD6004004C6 /* Friends.swift */,
+				07E950A425926C91004004C6 /* FriendsDAO.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +156,9 @@
 			files = (
 				07350EC32592377D00E0D3BD /* FriendsCollectionViewCell.swift in Sources */,
 				07DA3313258D210300CCC42C /* ViewController.swift in Sources */,
+				07E950A525926C91004004C6 /* FriendsDAO.swift in Sources */,
 				07DA330F258D210300CCC42C /* AppDelegate.swift in Sources */,
+				07E950A225926BD6004004C6 /* Friends.swift in Sources */,
 				07DA3311258D210300CCC42C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD777GC7QY;
 				INFOPLIST_FILE = "profile-facebook/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD777GC7QY;
 				INFOPLIST_FILE = "profile-facebook/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
